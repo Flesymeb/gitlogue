@@ -5,6 +5,103 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] - 2026-07-25
+
+### ✨ Features
+
+- feat(git): detect renames in diff extraction and preserve old_path ([782e28f](https://github.com/unhappychoice/gitlogue/commit/782e28f))
+
+### 🐛 Bug Fixes
+
+- fix(ci): bump cachix/install-nix-action to v31 in release.yml ([f9c046f](https://github.com/unhappychoice/gitlogue/commit/f9c046f))
+- fix(ci): bump cachix/install-nix-action from v27 to v31 ([d52afc8](https://github.com/unhappychoice/gitlogue/commit/d52afc8))
+- fix(ci): bump rust-cache prefix-key to invalidate stale cache ([e2e1fbf](https://github.com/unhappychoice/gitlogue/commit/e2e1fbf))
+- fix: address CodeRabbit review findings on rename detection and ignore handling ([2f50404](https://github.com/unhappychoice/gitlogue/commit/2f50404))
+
+### 📝 Other Changes
+
+- chore: bump version to v0.10.0 ([1733beb](https://github.com/unhappychoice/gitlogue/commit/1733beb))
+- chore(deps): bump clap from 4.6.2 to 4.6.3 ([cb16226](https://github.com/unhappychoice/gitlogue/commit/cb16226))
+- chore(deps): bump serde from 1.0.228 to 1.0.229 ([bfa2e8f](https://github.com/unhappychoice/gitlogue/commit/bfa2e8f))
+- chore(deps): bump anyhow from 1.0.103 to 1.0.104 ([59a5273](https://github.com/unhappychoice/gitlogue/commit/59a5273))
+- chore(deps): bump globset from 0.4.18 to 0.4.19 ([3c39bb3](https://github.com/unhappychoice/gitlogue/commit/3c39bb3))
+- chore(deps): bump clap from 4.6.1 to 4.6.2 ([4cd1f8c](https://github.com/unhappychoice/gitlogue/commit/4cd1f8c))
+- chore(deps): bump toml_edit ([8f39d64](https://github.com/unhappychoice/gitlogue/commit/8f39d64))
+- chore(deps): bump toml from 1.1.2+spec-1.1.0 to 1.1.3+spec-1.1.0 ([8506de7](https://github.com/unhappychoice/gitlogue/commit/8506de7))
+- chore(deps): bump rand from 0.10.1 to 0.10.2 ([a7bfa2e](https://github.com/unhappychoice/gitlogue/commit/a7bfa2e))
+- chore(deps): bump anyhow from 1.0.102 to 1.0.103 ([b800f56](https://github.com/unhappychoice/gitlogue/commit/b800f56))
+- chore(deps): bump ratatui from 0.30.1 to 0.30.2 ([127f59a](https://github.com/unhappychoice/gitlogue/commit/127f59a))
+- chore(deps): bump ratatui from 0.30.0 to 0.30.1 ([450f68d](https://github.com/unhappychoice/gitlogue/commit/450f68d))
+- chore(deps): bump tree-sitter-erlang from 0.18.0 to 0.19.0 ([09d4546](https://github.com/unhappychoice/gitlogue/commit/09d4546))
+- chore(deps): bump chrono from 0.4.44 to 0.4.45 ([b885f16](https://github.com/unhappychoice/gitlogue/commit/b885f16))
+- chore(deps): bump tree-sitter-swift from 0.7.2 to 0.7.3 ([c055f30](https://github.com/unhappychoice/gitlogue/commit/c055f30))
+- chore(deps): bump toml_edit ([99d5aa3](https://github.com/unhappychoice/gitlogue/commit/99d5aa3))
+- chore(deps): bump tree-sitter-erlang from 0.17.0 to 0.18.0 ([4029ebc](https://github.com/unhappychoice/gitlogue/commit/4029ebc))
+- chore(deps): bump git2 from 0.20.4 to 0.21.0 ([43ac447](https://github.com/unhappychoice/gitlogue/commit/43ac447))
+- docs: add HelloGitHub featured badge ([e0642e1](https://github.com/unhappychoice/gitlogue/commit/e0642e1))
+- chore(deps): bump tree-sitter-erlang from 0.16.0 to 0.17.0 ([a4a8066](https://github.com/unhappychoice/gitlogue/commit/a4a8066))
+- docs: add Discord and blog mentions to Support section ([c525869](https://github.com/unhappychoice/gitlogue/commit/c525869))
+- docs: add general hashtags to share links ([2bb9984](https://github.com/unhappychoice/gitlogue/commit/2bb9984))
+- docs: add Support section with star and share links to README ([bd3b1c9](https://github.com/unhappychoice/gitlogue/commit/bd3b1c9))
+- ci: merge test job into coverage run ([50321ea](https://github.com/unhappychoice/gitlogue/commit/50321ea))
+- ci: add codecov coverage measurement ([4ab7bef](https://github.com/unhappychoice/gitlogue/commit/4ab7bef))
+- chore(deps): bump tree-sitter-swift from 0.7.1 to 0.7.2 ([74e94cf](https://github.com/unhappychoice/gitlogue/commit/74e94cf))
+- docs(readme): add hero section with centered demo, badge row, and tagline ([460fa22](https://github.com/unhappychoice/gitlogue/commit/460fa22))
+- chore: remove accidentally committed llvm-cov report file ([914462b](https://github.com/unhappychoice/gitlogue/commit/914462b))
+- refactor(config): replace HOME env mutation in TempHome with injected override ([0d5c3e4](https://github.com/unhappychoice/gitlogue/commit/0d5c3e4))
+- test: address Clippy lint and version drift in About overlay assertion ([d49df10](https://github.com/unhappychoice/gitlogue/commit/d49df10))
+- refactor(syntax): treat unreachable defensive branches in bundled tree-sitter setup as internal invariants ([3a8dbcf](https://github.com/unhappychoice/gitlogue/commit/3a8dbcf))
+- refactor(ui): restructure event loop for direct unit testing and add branch tests ([7d39094](https://github.com/unhappychoice/gitlogue/commit/7d39094))
+- refactor(ui): extract external signal handling into testable helpers and add regression tests ([63bc1d9](https://github.com/unhappychoice/gitlogue/commit/63bc1d9))
+- test(syntax): cover two failure branches in syntax/mod.rs ([ac29450](https://github.com/unhappychoice/gitlogue/commit/ac29450))
+- refactor(ui): extract terminal restore and external signal shutdown into testable helpers ([c122991](https://github.com/unhappychoice/gitlogue/commit/c122991))
+- test(cli): add integration test for invalid theme CLI error case ([9e2c80d](https://github.com/unhappychoice/gitlogue/commit/9e2c80d))
+- test(git): cover date filter miss and empty effective commit range error branches ([f468d34](https://github.com/unhappychoice/gitlogue/commit/f468d34))
+- test(syntax): cover non-UTF-8 extension guard in get_language ([c4e4234](https://github.com/unhappychoice/gitlogue/commit/c4e4234))
+- refactor(ui): extract run loop helpers for redraw, signal flag, and event dispatch with unit tests ([7c7429f](https://github.com/unhappychoice/gitlogue/commit/7c7429f))
+- test(cli): add PTY-based integration tests for normal and staged-diff playback shutdown ([07668ea](https://github.com/unhappychoice/gitlogue/commit/07668ea))
+- test(animation): fill AnimationEngine boundary branches and clean up unreachable ones ([d570a26](https://github.com/unhappychoice/gitlogue/commit/d570a26))
+- test(git): add regression tests for add/delete commits and excluded lockfile diffs ([2e41a23](https://github.com/unhappychoice/gitlogue/commit/2e41a23))
+- test(git): add regression tests for large-diff commit and working-tree boundary cases ([97f9d9f](https://github.com/unhappychoice/gitlogue/commit/97f9d9f))
+- refactor(syntax): tidy unreachable language registry fallback into enum and cover SelectableParagraph zero-size render ([59c1771](https://github.com/unhappychoice/gitlogue/commit/59c1771))
+- test(panes,widgets): cover unreached render branches ([fba60e6](https://github.com/unhappychoice/gitlogue/commit/fba60e6))
+- test(git): cover defensive branches and open-ended commit range ([3473841](https://github.com/unhappychoice/gitlogue/commit/3473841))
+- test(ui): add tests for pure state transition helpers ([ec11314](https://github.com/unhappychoice/gitlogue/commit/ec11314))
+- test(syntax): cover token mapping and injection guard paths in highlighter ([bb14b87](https://github.com/unhappychoice/gitlogue/commit/bb14b87))
+- test(cli): cover normal and staged-diff playback startup paths via non-interactive integration tests ([cb3a23c](https://github.com/unhappychoice/gitlogue/commit/cb3a23c))
+- test(syntax): cover highlighter fallback and caching branches ([ba4942e](https://github.com/unhappychoice/gitlogue/commit/ba4942e))
+- test(animation): directly test uncovered AnimationEngine helpers ([a6cb9c6](https://github.com/unhappychoice/gitlogue/commit/a6cb9c6))
+- test(config): add regression tests for filesystem error paths ([4eddc44](https://github.com/unhappychoice/gitlogue/commit/4eddc44))
+- test(main): extract normal playback prep into helpers and cover uncovered branches ([8caee7d](https://github.com/unhappychoice/gitlogue/commit/8caee7d))
+- test(cli): cover non-interactive CLI branches with integration tests ([407bba6](https://github.com/unhappychoice/gitlogue/commit/407bba6))
+- test(ui): extract playback state transitions into helpers and add regression tests ([deb44e9](https://github.com/unhappychoice/gitlogue/commit/deb44e9))
+- test(config): cover compatibility, error paths, and empty array serialization ([74ae357](https://github.com/unhappychoice/gitlogue/commit/74ae357))
+- test(ui): extract keyboard input branches into helpers and add regression tests ([4c3be65](https://github.com/unhappychoice/gitlogue/commit/4c3be65))
+- test(main): extract diff subcommand prep into helper and cover staged/unstaged/empty diff ([952960b](https://github.com/unhappychoice/gitlogue/commit/952960b))
+- refactor(main): make CLI/runtime helpers and theme path testable ([4b8c82b](https://github.com/unhappychoice/gitlogue/commit/4b8c82b))
+- test(widgets): cover SelectableParagraph boundary branches and clean up unreachable guards ([ad2e09d](https://github.com/unhappychoice/gitlogue/commit/ad2e09d))
+- test(ui): add unit tests for uncovered UI branches ([e2b84f6](https://github.com/unhappychoice/gitlogue/commit/e2b84f6))
+- test(animation): cover special branches and manual checkpoint in AnimationEngine ([ff8d76c](https://github.com/unhappychoice/gitlogue/commit/ff8d76c))
+- refactor(main): extract CLI resolution into testable helpers and add unit tests ([95b3510](https://github.com/unhappychoice/gitlogue/commit/95b3510))
+- test(git): add unit tests for commit history selection logic ([e5e8d7b](https://github.com/unhappychoice/gitlogue/commit/e5e8d7b))
+- test(ui): add unit tests for state transitions and overlay rendering ([576e964](https://github.com/unhappychoice/gitlogue/commit/576e964))
+- test(syntax): add unit tests for syntax highlighter core ([cc8de91](https://github.com/unhappychoice/gitlogue/commit/cc8de91))
+- test(panes): add unit tests for EditorPane render and highlight ([927a544](https://github.com/unhappychoice/gitlogue/commit/927a544))
+- test(panes): add render tests for StatusBarPane and TerminalPane ([9341abf](https://github.com/unhappychoice/gitlogue/commit/9341abf))
+- test(panes): cover FileTreePane tree build, cache update, and selected-row render ([b6687cc](https://github.com/unhappychoice/gitlogue/commit/b6687cc))
+- test(syntax): add unit tests for language resolution logic ([b811a7c](https://github.com/unhappychoice/gitlogue/commit/b811a7c))
+- test(theme): add unit tests for theme resolution and transparent background ([ee674a2](https://github.com/unhappychoice/gitlogue/commit/ee674a2))
+- test(widgets): cover SelectableParagraph wrap, dim, and render branches ([0e284e0](https://github.com/unhappychoice/gitlogue/commit/0e284e0))
+- test(config): add save/load tests and fix loop setting round-trip ([94cef3a](https://github.com/unhappychoice/gitlogue/commit/94cef3a))
+- test(animation): add unit tests for core logic in animation.rs ([2f1b642](https://github.com/unhappychoice/gitlogue/commit/2f1b642))
+- chore(deps): bump tree-sitter-dart from 0.1.0 to 0.2.0 ([39ddfa4](https://github.com/unhappychoice/gitlogue/commit/39ddfa4))
+- chore(deps): bump tree-sitter-erlang from 0.15.0 to 0.16.0 ([2bcf755](https://github.com/unhappychoice/gitlogue/commit/2bcf755))
+- chore(deps): bump tree-sitter-c from 0.24.1 to 0.24.2 ([099dc82](https://github.com/unhappychoice/gitlogue/commit/099dc82))
+- chore(deps): bump clap from 4.6.0 to 4.6.1 ([70dbfa2](https://github.com/unhappychoice/gitlogue/commit/70dbfa2))
+- chore(deps): bump tree-sitter-scala from 0.25.0 to 0.26.0 ([82f92b8](https://github.com/unhappychoice/gitlogue/commit/82f92b8))
+- chore: update flake.nix hashes for v0.9.0 ([7800337](https://github.com/unhappychoice/gitlogue/commit/7800337))
+
+
 ## [0.9.0] - 2026-04-20
 
 ### ✨ Features
@@ -20,7 +117,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 📝 Other Changes
 
-- chore: bump version to v0.9.0 ([2670b69](https://github.com/unhappychoice/gitlogue/commit/2670b69))
+- chore: bump version to v0.9.0 ([bbbf7ac](https://github.com/unhappychoice/gitlogue/commit/bbbf7ac))
 - chore(deps): bump tree-sitter-c-sharp from 0.23.1 to 0.23.5 ([31c5efb](https://github.com/unhappychoice/gitlogue/commit/31c5efb))
 - chore(deps): bump rand from 0.10.0 to 0.10.1 ([58f6d85](https://github.com/unhappychoice/gitlogue/commit/58f6d85))
 - chore(deps): bump toml_edit ([de7786f](https://github.com/unhappychoice/gitlogue/commit/de7786f))
