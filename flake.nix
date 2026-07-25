@@ -29,7 +29,7 @@
             owner = "unhappychoice";
             repo = "gitlogue";
             rev = "v${version}";
-            hash = "sha256-w+5X3NhHCLDXRGQx2JxpIayekMk242uia1bJSRjDDAE=";
+            hash = "sha256-hmWp22UPcKRjLM6vNDkdWrgkvjO27Ys2xzkx/co8lrE=";
           };
           cargoHash = "sha256-Ne0dMpQJ2W/JgCXijosqXBr8B6C1XgK4KnOjByckcms=";
           nativeBuildInputs = [ pkgs.pkg-config pkgs.git pkgs.perl ];
