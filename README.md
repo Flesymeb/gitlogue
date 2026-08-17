@@ -73,7 +73,7 @@ See the [Installation Guide](docs/installation.md) for more options and troubles
 
 🎬 **Commit Replay as Animation** — Realistic typing, cursor movement, deletions, and file operations
 🔍 **Working Tree Diff View** — Visualize staged/unstaged changes before committing
-🎨 **Tree-sitter Syntax Highlighting** — 32 language families supported
+🎨 **Tree-sitter Syntax Highlighting** — 30 languages supported
 🌳 **Project File Tree** — Directory structure with change statistics
 🖥️ **Screensaver Mode** — Endless random commit playback
 🎭 **Themes** — 9 built-in themes + full customization support
