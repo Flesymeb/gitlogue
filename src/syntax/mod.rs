@@ -507,7 +507,8 @@ mod tests {
             expected.iter().for_each(|(needle, token_type)| {
                 assert!(
                     spans.iter().any(|span| {
-                        span.token_type == *token_type && &source[span.start..span.end] == *needle
+                        span.token_type == *token_type
+                            && source.get(span.start..span.end) == Some(*needle)
                     }),
                     "{path}: expected {needle:?} to be {token_type:?}"
                 );
@@ -516,12 +517,14 @@ mod tests {
 
         assert_highlights(
             "player.gd",
-            "extends Node3D\nfunc _ready() -> void:\n    var score: int = 42\n",
+            "extends Node3D\nfunc greet(name: String, count = 1) -> void:\n    var greeting = \"你好\"\n",
             &[
                 ("func", TokenType::Keyword),
-                ("_ready", TokenType::Function),
+                ("greet", TokenType::Function),
+                ("name", TokenType::Parameter),
+                ("count", TokenType::Parameter),
                 ("Node3D", TokenType::Type),
-                ("42", TokenType::Number),
+                ("\"你好\"", TokenType::String),
             ],
         );
         assert_highlights(

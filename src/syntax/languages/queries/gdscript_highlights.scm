@@ -24,11 +24,20 @@
 
 ; Functions, methods, and members
 (function_definition
-  name: (name) @function
-  parameters: (parameters) @parameter)
+  name: (name) @function)
 (constructor_definition "_init" @function)
 (lambda (name) @function)
-(lambda (parameters) @parameter)
+(parameters
+  [
+    (identifier) @parameter
+    (typed_parameter (identifier) @parameter)
+    (default_parameter (identifier) @parameter)
+    (typed_default_parameter (identifier) @parameter)
+    (variadic_parameter (identifier) @parameter)
+    (variadic_parameter (typed_parameter (identifier) @parameter))
+    (variadic_parameter (default_parameter (identifier) @parameter))
+    (variadic_parameter (typed_default_parameter (identifier) @parameter))
+  ])
 (call (identifier) @function)
 (attribute_call (identifier) @function)
 (base_call (identifier) @function)
